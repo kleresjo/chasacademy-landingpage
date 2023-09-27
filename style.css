@@ -11,6 +11,14 @@ body {
     margin: 0;
     padding: 0;
     background-color: var(--main-bg-color);
+    font-family: 'Roboto Condensed', sans-serif;
+}
+
+p {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.8;
+    letter-spacing: 1.2;
+    font-size: 18px;
 }
 
 a {
@@ -254,21 +262,21 @@ header {
 
 .grid-content {
     display: flex;
+    word-wrap: break-word;
     align-items: center;
     font-family: 'Roboto Condensed', sans-serif;
     font-size: 20px;
     height: 80px;
     width: 95%;
+    border: solid 1px transparent;
     color: var(--main-dark-color);
     background-color: var(--main-bg-color);
     border-radius: 15px;
     overflow: hidden;
-    z-index: 10;
 }
 
 .grid-img {
     display: flex;
-    z-index: 9;
     width: 150px;
     object-position: center;
     object-fit: cover;
@@ -277,4 +285,112 @@ header {
 
 .grid-p {
     margin-left: -10%;
+}
+
+.grid-content:hover {
+    border: solid var(--main-dark-color) 1px;
+    zoom: 1.01;
+    transition: 1s;
+    overflow: hidden;
+}
+
+/* STYLING FÖR 3E BLOCKET */
+
+.content-center-h1 {
+    margin-top: 4%;
+    text-align: center;
+    font-size: 34px;
+    color: var(--main-dark-color);
+    width: 100%;
+    font-family: 'roboto condensed', sans-serif;
+}
+
+/* STYLING AV VIDEO CONTENT BLOCK */
+
+.content-video {
+    width: 90%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    margin: 0px 5% 0px 6%;
+    gap: 15px;
+}
+
+.video-frame {
+    width: 90%;
+    border-radius: 15px;
+}
+
+/* STYLING FOR BLUE VIDE BLOCK */
+
+.blue-content {
+    margin-top: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    background-color: var(--main-blue-color);
+    padding-top: 5%;
+    padding-bottom: 5%;
+}
+
+.blue-video {
+    width: 80%;
+    margin-top: 5%;
+}
+
+.blue-text-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    width: 80%;
+    margin-left: 15%;
+    color: var(--main-light-color);
+}
+
+.blue-content-h4 {
+    font-size: 20px;
+}
+
+.blue-content-h1 {
+    font-size: 48px;
+}
+
+.blue-content-btn {
+    color: white;
+    border: solid var(--main-light-color) 1px;
+    background-color: transparent;
+    font-size: 14px;
+    width: 35%;
+    border-radius: 25px;
+    padding: 2% 2% 2% 2%;
+}
+
+.blue-content-btn:hover {
+    background-color: var(--main-light-color);
+    color: var(--main-blue-color);
+    cursor: pointer;
+    transition: 0.4s;
+}
+
+/* STUDENT GRID */
+
+.stundet-grid-2 {
+    width: 85%;
+    margin-left: 10%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    row-gap: 30px;
+}
+
+.student-grid-content {
+    width: 90%;
+    padding: 5%;
+}
+
+.student-img {
+    width: 350px;
+}
+
+.student-text {
+    width: 90%;
+    display: flex;
+    flex-wrap: wrap;
 }
